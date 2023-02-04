@@ -1,0 +1,8 @@
+<h3>Blog</h3>
+<ul>
+{% for post in articles %}
+{% if loop.index <= 10 %}
+<li>{{ post.title }}</li>
+{% endif %}
+{% endfor %}
+</ul>

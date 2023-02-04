@@ -1,0 +1,8 @@
+<h3>News</h3>
+<ul>
+{% for post in news.articles %}
+{% if loop.index <= 10 %}
+<li>{{ post.title }}</li>
+{% endif %}
+{% endfor %}
+</ul>
